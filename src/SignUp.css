@@ -1,0 +1,302 @@
+.form-style-5{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+}
+.form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="password"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}
+/* button {
+    margin: 0 auto;
+    display: block;
+} */
+/* button {
+	display: block;
+	margin: 0 auto;
+	padding: 10px 15px;
+	font-size: 14px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 px #999;
+  }
+  
+  button:hover {background-color: #3e8e41}
+  
+  button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 2px #666;
+	transform: translateY(2px);
+  } */
+
+  button {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	/* show a hand cursor on hover; some argue that we
+	should keep the default arrow cursor for buttons */
+	cursor: pointer;
+  }
+
+  /**
+   * Button component
+   */
+  .btn {
+	/* default for <button>, but needed for <a> */
+	display: block;
+	text-align: center;
+	text-decoration: none;
+
+	/* create a small space when buttons wrap on 2 lines */
+	margin: 0 auto;
+
+	/* invisible border (will be colored on hover/focus) */
+	border: solid 1px transparent;
+	border-radius: 1px;
+
+	/* button size comes from text + padding, avoid height */
+	padding: 0.5em 1em;
+
+	/* make sure colors have enough contrast! */
+	color: #FFFFFF;
+	background-color: #9555AF;
+  }
+
+  /* old-school "down" effect on clic + color tweak */
+  .btn:active {
+	transform: translateY(1px);
+	filter: saturate(150%);
+  }
+
+  /* inverse colors on hover */
+  .btn:hover {
+	color: #9050AA;
+	border-color: currentColor;
+	background-color: white;
+  }
+
+  /* Firefox: remove the inner border shown on focus */
+  .btn::-moz-focus-inner {
+	border: none;
+  }
+
+  /* make sure we have a visible focus ring */
+  .btn:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.5),
+	  0 0 0 1.5px rgba(255, 105, 180, 0.5);
+  }
+
+  /* hide focus style if not from keyboard navigation */
+  .js-focus-visible .btn:focus:not(.focus-visible) {
+	box-shadow: none;
+  }
+  .todoListMain .header input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFF;
+    width: 165px;
+  }
+  .todoListMain .header button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+  }
+  .todoListMain .header button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer;
+  }
+  .todoListMain .theList {
+    list-style: none;
+    padding-left: 0;
+    width: 250px;
+  } 
+  .todoListMain .theList li {
+    color: #333;
+    background-color: rgba(255,255,255,.5);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    list-style: none;
+  }
+  ul.theList {
+    padding: 0;
+  }
+  .todoListMain .theList li {
+    color: #333;
+    background-color: rgba(255,255,255,.5);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+   
+    transition: background-color .2s ease-out;
+  }
+   
+  .todoListMain .theList li:hover {
+    background-color: pink;
+    cursor: pointer;
+  }
+
+  ul {
+	list-style: none; /* Remove list bullets */
+	padding: 0;
+	margin: 0;
+  }
+
+  .btn_2 {
+	/* default for <button>, but needed for <a> */
+	display: block;
+	text-align: center;
+	text-decoration: none;
+
+	/* create a small space when buttons wrap on 2 lines */
+	margin: 0 auto;
+
+	/* invisible border (will be colored on hover/focus) */
+	border: solid 1px transparent;
+	border-radius: 1px;
+
+	/* button size comes from text + padding, avoid height */
+	padding: 0.5em 1em;
+
+	/* make sure colors have enough contrast! */
+	color: rgb(65, 54, 54);
+	background-color: rgb(255, 255, 255);
+  }
+
+  /* old-school "down" effect on clic + color tweak */
+  .btn_2:active {
+	transform: translateY(1px);
+	filter: saturate(150%);
+  }
+
+  /* inverse colors on hover */
+  .btn_2:hover {
+	color: rgb(80, 82, 170);
+	border-color: currentColor;
+	background-color: rgb(228, 228, 228);
+  }
+
+  /* Firefox: remove the inner border shown on focus */
+  .btn_2::-moz-focus-inner {
+	border: none;
+  }
+
+  /* make sure we have a visible focus ring */
+  .btn_2:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(37, 86, 151, 0.5),
+	  0 0 0 1.5px rgba(120, 105, 255, 0.5);
+  }
+
+  /* hide focus style if not from keyboard navigation */
+  .js-focus-visible .btn_2:focus:not(.focus-visible) {
+	box-shadow: none;
+  }
